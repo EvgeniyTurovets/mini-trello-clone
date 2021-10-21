@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created" />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="../src/stylesReset/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <title>my-mini-trello-clone</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="../src/index.jsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./serviceWorker.js');
+        });
+      }
+    </script>
+    <noscript>
+      Please enable Javascript to continue using this application.
+    </noscript>
+  </body>
+</html>
